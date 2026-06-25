@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bursa Tanıtım Sitesi</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        nav{
+            background:green;
+            padding:20px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 25px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ddd;
+        }
+
+        section{
+            padding:50px;
+        }
+
+        h2{
+            text-align:center;
+            color:green;
+            margin-bottom:40px;
+            font-size:50px;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+        }
+
+        .card{
+            width:320px;
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:15px;
+        }
+
+        .card-content h3{
+            color:green;
+            margin-bottom:10px;
+        }
+
+        .card-content p{
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:green;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background:darkgreen;
+        }
+
+        footer{
+            background:green;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        #anasayfa{
+            background:url("images/uludag.png");
+            background-size:cover;
+            background-position:center;
+            height:500px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+
+        #anasayfa h1{
+            font-size:60px;
+            background:rgba(0,0,0,0.5);
+            padding:20px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#gezilecek">Gezilecek Yerler</a>
+        <a href="#yemekler">Yemekler</a>
+        <a href="#ilceler">İlçeler</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <section id="anasayfa">
+        <h1>Bursa'ya Hoş Geldiniz</h1>
+    </section>
+
+    <section id="gezilecek">
+        <h2>Gezilecek Yerler</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/uludag.png" alt="Uludağ">
+
+                <div class="card-content">
+                    <h3>Uludağ</h3>
+                    <p>Türkiye'nin en önemli kayak merkezlerinden biridir.</p>
+
+                    <a href="uludag.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ulucami.jpg" alt="Ulu Camii">
+
+                <div class="card-content">
+                    <h3>Ulu Camii</h3>
+                    <p>Osmanlı döneminin en önemli camilerinden biridir.</p>
+
+                    <a href="ulucami.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/kozahan.jpg" alt="Koza Han">
+
+                <div class="card-content">
+                    <h3>Koza Han</h3>
+                    <p>İpek ticaretinin merkezi olan tarihi han.</p>
+
+                    <a href="kozahan.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/cumalikizik.jpg" alt="Cumalıkızık">
+
+                <div class="card-content">
+                    <h3>Cumalıkızık</h3>
+                    <p>Osmanlı döneminden kalan tarihi köy.</p>
+
+                    <a href="cumalikizik.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/yesilturbe.jpg" alt="Yeşil Türbe">
+
+                <div class="card-content">
+                    <h3>Yeşil Türbe</h3>
+                    <p>Bursa'nın en önemli tarihi yapılarından biridir.</p>
+
+                    <a href="yesilturbe.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/tophane.jpg" alt="Tophane">
+
+                <div class="card-content">
+                    <h3>Tophane Saat Kulesi</h3>
+                    <p>Bursa manzarasının en güzel izlendiği nokta.</p>
+
+                    <a href="tophane.html" class="btn">
+                        Detayları Gör
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="yemekler">
+        <h2>Meşhur Bursa Yemekleri</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/iskender.jpg" alt="">
+                <div class="card-content">
+                    <h3>İskender Kebap</h3>
+                    <a href="iskender.html" class="btn">Detayları Gör</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/cantik.jpg" alt="">
+                <div class="card-content">
+                    <h3>Cantık</h3>
+                    <a href="cantik.html" class="btn">Detayları Gör</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/tahinlipide.jpg" alt="">
+                <div class="card-content">
+                    <h3>Tahinli Pide</h3>
+                    <a href="tahinlipide.html" class="btn">Detayları Gör</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pidelikofte.jpg" alt="">
+                <div class="card-content">
+                    <h3>Pideli Köfte</h3>
+                    <a href="pidelikofte.html" class="btn">Detayları Gör</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/kestanesekeri.jpg" alt="">
+                <div class="card-content">
+                    <h3>Kestane Şekeri</h3>
+                    <a href="kestanesekeri.html" class="btn">Detayları Gör</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ilceler">
+        <h2>Bursa İlçeleri</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Osmangazi</h3>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Nilüfer</h3>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Yıldırım</h3>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="iletisim">
+        <h3>Bursa Tanıtım Sitesi</h3>
+        <p>© 2026 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
